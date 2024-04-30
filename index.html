@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video</title>
+    <link rel="stylesheet" href="/codePractice2/videoStyle.css" />
+    <link rel="stylesheet" href="/codePractice/font.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="mobile-header">
+      <div class="header-container">
+        <a href="/" class="logo"> Carrot </a>
+        <a class="icon-menu" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="menu-content">
+        <ul>
+          <li><a href="#">캐럿 서비스 소개</a></li>
+          <li><a href="#">캐럿 보상 서비스</a></li>
+          <li><a href="#">캐럿 기업 보험 가입</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="hero">
+      <video class="hero__video" autoplay loop muted>
+        <source
+          src="https://cdn1.carrotins.com/model/kyj/home/pc-home-wide-v4.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="hero__content">
+        <h1 class="hero__title">캐롯 보험으로 오세요<br />by 지훈</h1>
+      </div>
+    </div>
+    <!-- 상단 메뉴 애니메이션 -->
+    <script>
+      $(document).ready(function () {
+        const menuIcon = $(".icon-menu");
+        menuIcon.click(function (e) {
+          e.preventDefault();
+          menuIcon.toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
