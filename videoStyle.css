@@ -21,6 +21,10 @@ a {
   color: white;
   font-weight: 600;
 }
+a.section {
+  padding: 16px 24px;
+  display: block;
+}
 .mobile-header .logo {
   font-size: 24px;
   text-align: center;
@@ -149,7 +153,6 @@ body {
   padding: 0;
 }
 .mobile-header li {
-  padding: 16px 24px;
   font-weight: 600;
   color: white;
 }
