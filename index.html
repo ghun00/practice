@@ -65,37 +65,24 @@
         <p class="content_sub-white" data-aos="fade-up">
           캐롯을 선택할 수 밖에 없는 다양한 목소리
         </p>
-        <div class="card-slide slick-slider">
-          <div class="item-box slick-slide">
-            <div class="item-wrap">
-              <p class="item-title">실제 후기</p>
-              <p class="item-content">
-                실제 자동차 사용이 많지 않은데 합리적인 가격으로 가입할 수
-                있다는 점이 너무 좋았어요. 긴급 출동도 문제 없고, 너무 만족
-                합니다. 앞으로도 계속 쓸 것 같아요!
-              </p>
-              <p class="item-sub">2024.04.12</p>
-            </div>
+        <div class="slider">
+          <div class="slick-slide">
+            <img
+              src="https://ghun00.github.io/practice/item-box1.png"
+              alt="item1"
+            />
           </div>
-          <div class="item-box slick-slide">
-            <div class="item-wrap">
-              <p class="item-title">실제 후기</p>
-              <p class="item-content">
-                5년째 가입중입니다! 실제 탄 만큼만 분납하고 있어요. 긴급 출동도
-                다른 보험사와 비교했을 때 빨랐어요!
-              </p>
-              <p class="item-sub">2024.04.12</p>
-            </div>
+          <div class="slick-slide">
+            <img
+              src="https://ghun00.github.io/practice/item-box2.png"
+              alt="item3"
+            />
           </div>
-          <div class="item-box slick-slide">
-            <div class="item-wrap">
-              <p class="item-title">실제 후기</p>
-              <p class="item-content">
-                타 보험사 대비 혜택도 많고 무엇보다 고윤정님이 대표 모델이라는
-                것이 굉장히 좋았습니다. 저희 가족 모두 캐롯으로 바꿨습니다~~
-              </p>
-              <p class="item-sub">2024.04.12</p>
-            </div>
+          <div class="slick-slide">
+            <img
+              src="https://ghun00.github.io/practice/item-box3.png"
+              alt="item4"
+            />
           </div>
         </div>
       </div>
@@ -209,9 +196,9 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
-      $(".slick-slider").slick({
+      $(".slider").slick({
         centerMode: true,
-        centerPadding: "60px",
+        centerPadding: "12px",
         slidesToShow: 3,
         autoplay: true,
         responsive: [
@@ -221,7 +208,7 @@
               arrows: false,
               centerMode: true,
               centerPadding: "40px",
-              slidesToShow: 3,
+              slidesToShow: 1,
             },
           },
           {
@@ -229,7 +216,7 @@
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: "40px",
+              centerPadding: "20px",
               slidesToShow: 1,
             },
           },
