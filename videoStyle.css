@@ -18,10 +18,9 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 100;
-  background-color: transparent;
   backdrop-filter: blur(12px);
 }
 .mobile-header a {
@@ -171,6 +170,10 @@ body {
 .main-section.mainColor {
   background-color: #ff5000;
 }
+.main-section.service {
+  background-color: #f8f9fa;
+  padding: 60px 16px;
+}
 .content_title {
   font-size: 24px;
   font-weight: 700;
@@ -218,37 +221,54 @@ body {
   box-sizing: border-box;
   border-radius: 8px;
 }
-
-/* dots custom */
-.dots_custom {
-  display: inline-block;
-  vertical-align: middle;
-  margin: auto 0;
-  padding: 0;
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 3rem;
+  padding: 20px 16px;
 }
-
-.dots_custom li {
-  list-style: none;
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 6px;
-  padding: 0;
+.image-section {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-
-.dots_custom li button {
-  border: none;
-  background: #d1d1d1;
+.image-wrap {
+  position: relative;
+  max-width: 208px;
+  width: 100%;
+  height: 120px;
+  margin: 16px 0;
+}
+.image-wrap img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 50%;
   color: transparent;
-  cursor: pointer;
-  display: block;
-  height: 8px;
-  width: 8px;
-  border-radius: 100%;
-  padding: 0;
 }
-
-.dots_custom li.slick-active button {
-  background-color: #08c1ce;
+.service-card .content_title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.service-card .content_sub {
+  text-align: left;
+}
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  background: #f8f9fa;
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #868e96;
 }
 
 /* 반응형 스타일 */
@@ -274,12 +294,5 @@ body {
   }
   .header-container {
     padding: 16px 24px;
-  }
-  .slick-slide img {
-    height: 160px;
-  }
-  .slick-slide {
-    height: 160px;
-    margin: 0 12px;
   }
 }
